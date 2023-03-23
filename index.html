@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<html data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <link rel="stylesheet" href="pico.min.css">
+  <style>
+    :root {
+      --primary: rgb(157, 0, 255);
+      --secondary: rgb(157, 0, 255);
+      --contrast: gray;
+      --primary-hover: rgba(199, 123, 247, 0.367);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <nav>
+      <ul>
+        <li><strong>K4NK0</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Acerca de</a></li>
+        <li><a href="#">Sobre mi</a></li>
+        <li><a href="#" role="button">Cesta</a></li>
+      </ul>
+    </nav>
+    <h1>PicoCSS Juan José Giménez Marín</h1>
+    <p><mark>Lorem</mark> ipsum dolor <del>sit</del> amet consectetur adipisicing elit. Tempora qui,
+      <ins>aspernatur</ins> dignissimos laudantium tenetur totam quidem officia quas nulla aut labore quaerat
+      <abbr>temporibus esse</abbr>, exercitationem voluptatibus, neque dolorum sapiente inventore.
+    </p>
+
+
+    <details>
+      <summary> acordeon1</summary>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur sunt, numquam illum, eos ratione
+        veniam consectetur labore sint hic ipsum autem. Corrupti deserunt perspiciatis odit sed ex libero fugiat?</p>
+    </details>
+
+    <details>
+      <summary> acordeon2</summary>
+      <ul>
+        <li>Lista</li>
+        <li>Ejemplo</li>
+        <li>Pico CSS</li>
+        <li>HTML</li>
+        <li>Juanjo</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>acordeon 3 (tabla)</summary>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+            <th scope="col">Heading</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Celda</td>
+            <td>Celda</td>
+            <td>Celda</td>
+            <td>Celda</td>
+
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Celda</td>
+            <td>Celda</td>
+            <td>Celda</td>
+            <td>Celda</td>
+
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Celda</td>
+            <td>Celda</td>
+            <td>Celda</td>
+            <td>Celda</td>
+
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="col">#</th>
+            <td scope="col">Total</td>
+            <td scope="col">Total</td>
+            <td scope="col">Total</td>
+            <td scope="col">Total</td>
+
+          </tr>
+        </tfoot>
+      </table>
+    </details>
+
+
+
+    <div class="grid">
+
+
+      <div><img class="pizza" src="img/perro.png" alt="" width="200px">
+        <p>Un perro bucenado</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, repellendus asperiores.</p>
+      </div>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam saepe delectus ipsam rem dolorum explicabo
+          natus, commodi doloribus praesentium unde similique velit eveniet laborum autem assumenda obcaecati
+          repellendus fugit accusamus ullam culpa aliquam magnam! Totam, tenetur iusto. Esse voluptatem facere maxime
+          inventore vel quaerat dolor minus voluptatibus voluptates modi similique adipisci non voluptas dolorum quia
+          aut, quisquam deserunt at omnis blanditiis dolores, laboriosam sequi culpa? Repellendus voluptatem
+          consequuntur molestias repellat? Totam inventore ipsum obcaecati nisi quos dolorem aliquam deleniti
+          voluptatem. Atque recusandae totam deleniti perferendis ut libero, id omnis ea, architecto temporibus, earum
+          voluptatem explicabo. Aut porro accusamus quia cupiditate.</p>
+      </div>
+    </div>
+
+    <h2>Personajes Breaking Bad</h2>
+<div class="grid">
+
+<img src="/img/gustavo.jpg" alt="" width="200px" >
+<p>Gustavo Fring</p>
+<img src="/img/walter.jpg" alt="" width="200px">
+<p>Walter White</p>
+<img src="/img/jessie.jpg" alt="" width="200px">
+<p>Jessie Pinkman</p>
+</div>
+<div class="grid">
+<img src="/img/saul.jpg" alt="" width="200px">
+<p>Saul Goodman </p>
+<img src="/img/miker.jpg" alt="" width="200px">
+<p>Mike Ehrmantraut</p>
+<img src="/img/hank.jpg" alt="" width="200px">
+<p>Hank Schrader</p>
+</div>
+
+
+    <!-- FORMULARIO -->
+    <form>
+
+      <!-- Grid -->
+      <div class="grid">
+
+        <!-- Markup example 1: input is inside label -->
+        <label for="nombre">
+          Nombre
+          <input type="text" placeholder="Nombre" required>
+        </label>
+
+        <label for="Apellidos">
+          Apellidos
+          <input type="text" placeholder="Apellidos" required>
+        </label>
+      </div>
+      <div class="grid">
+        <label for="email">
+          Email
+          <input type="email" placeholder="Email" required>
+        </label>
+
+        <label for="Nombre se usuario">
+          Nombre de usuario
+          <input type="text" placeholder="Nombre de usuraio" required>
+        </label>
+
+        <label for="Número de teléfono">
+          Número de teléfono
+          <input type="number" placeholder="Número de teléfono" required>
+        </label>
+
+      </div>
+      <div class="grid">
+        <input type="search" id="search" name="search" placeholder="Search">
+
+        <!-- Select -->
+
+        <select id="permisos" required>
+          <option value="" selected>Selecciona un permiso…</option>
+          <option>administrador</option>
+          <option>usuario</option>
+          <option>invitado</option>
+        </select>
+      </div>
+      <div class="grid">
+        <!-- Radios -->
+        <fieldset>
+          <legend>Tamaños</legend>
+          <label for="pequeño">
+            <input type="radio" value="pequeño">
+            Pequño
+          </label>
+          <label for="mediano">
+            <input type="radio" value="mediano">
+            Mediano
+          </label>
+          <label for="grande">
+            <input type="radio" value="grande">
+            Grande
+          </label>
+          <label for="extragrande">
+            <input type="radio" value="extragrande">
+            Extra Grande
+          </label>
+        </fieldset>
+
+        <!-- checkbox -->
+        <fieldset>
+          <label for="cookies">
+            <input type="checkbox" name="cookies">
+            Acepto todas las cookies
+          </label>
+          <label for="!cookies">
+            <input type="checkbox" name="!cookies">
+            Rechazo todas las cookies
+          </label>
+        </fieldset>
+
+
+        <!-- Switch -->
+        <fieldset>
+          <label for="switch">
+            <input type="checkbox" id="switch" name="switch" role="switch">
+            Hacer mi perfil privado 
+          </label>
+          <label for="switch">
+            <input type="checkbox" id="switch" name="switch" role="switch" >
+            Requerir cambio de contraseña cada mes.
+          </label>
+        </fieldset>
+
+      </div>
+      
+      <input type="submit">
+
+
+    </form>
+
+      <blockquote>
+        "Hay veces en la vida que solo tienes que decir "Amai" y seguir adelante."
+        <footer>
+          <cite>- Amador rivas </cite>
+        </footer>
+      </blockquote>
+  </main>
+</body>
+
+</html>
